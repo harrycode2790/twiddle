@@ -1,7 +1,7 @@
 import {Inter} from 'next/font/google'
 import {Metadata} from 'next'
 import {ClerkProvider} from '@clerk/nextjs'
-import '../global.css'
+import '../globals.css'
 
 export const metadata : Metadata = {
     title: 'Twiddle',
