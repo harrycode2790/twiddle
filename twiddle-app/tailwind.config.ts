@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         'dark-1': '#000000',
+        'light-1': '#ffffff',
       }
     },
   },
