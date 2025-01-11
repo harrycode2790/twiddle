@@ -3,6 +3,10 @@ import {Metadata} from 'next'
 import {ClerkProvider} from '@clerk/nextjs'
 import '../globals.css'
 import { currentUser } from '@clerk/nextjs/server'
+import RightSidebar from '@/components/shared/RightSideBar'
+import TopBar from '@/components/shared/TopBar'
+import LeftSideBar from '@/components/shared/LeftSideBar'
+import BottomBar from '@/components/shared/BottomBar'
 
 export const metadata : Metadata = {
     title: 'Twiddle',
@@ -47,7 +51,7 @@ export default async function RootLayout({children}:
                                 <main className={`${inter.className}`}>
                                     <TopBar/>
                                     <main className='flex flex-row'>
-                                        <LeftSidebar/>
+                                        <LeftSideBar/>
                                         <section className='main-container'>
                                             <div className='w-full flex justify-center items-center min-h-screen'>
                                                 {children}
