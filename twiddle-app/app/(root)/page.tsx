@@ -9,5 +9,11 @@ export default async function Home() {
         <LandingPage />
       </>
     );
+
+    return (
+      <>
+        
+      </>
+    )
   }
 }

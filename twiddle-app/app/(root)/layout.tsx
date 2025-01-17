@@ -42,8 +42,7 @@ export default async function RootLayout({children}:
     }
 
     return (
-        <>
-             return (
+        
         <>
             <html lang='en'>  
                     <ClerkProvider>
@@ -68,8 +67,5 @@ export default async function RootLayout({children}:
             </html>
         </>
         )
-
-        </>
-    )
    
 }
