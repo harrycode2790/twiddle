@@ -1,3 +1,5 @@
+'use server'
+
 import mongoose from "mongoose";
 let isConnected:boolean = false;
 
@@ -16,7 +18,7 @@ export const connectDB = async ():Promise<void> => {
         console.log('MongoDB connected');
         
     } catch (err : any) {
-        console.log(`Error Connecting to MongoDB: ${err.message}`);   
+        throw new Error(`Error Connecting to MongoDB: ${err.message}`);   
         
     }
 }

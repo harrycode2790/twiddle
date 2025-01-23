@@ -21,8 +21,7 @@ export const CreateUser = async ( {userId, email, username, name, image}: Create
             username:username?.toLowerCase(),
             email,
             name,
-            image
-            
+            image        
       })
     } catch (err : any) {
         throw new Error (`Failed to create user${err.message}`)
